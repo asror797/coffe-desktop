@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/barlow-v5-latin-regular.woff2') format('woff2'),
+       url('../fonts/barlow-v5-latin-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/barlow-v5-latin-700.woff2') format('woff2'), 
+       url('../fonts/barlow-v5-latin-700.woff') format('woff');
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+       url('../fonts/fraunces-v10-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/fraunces-v10-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+*,*::before,*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow",sans-serif;
+  font-size: 19px;
+}
+
+.container {
+  max-width: 1245px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+/* header*/
+
+header {
+  width: 100%;
+}
+
+.header__itm {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  padding: 17px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu > li {
+  margin-left: 21px;
+}
+
+.menu > li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #83888F;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.5s ease;
+}
+
+.menu a:hover {
+  color: #333D4B !important;
+}
+
+/*end of nav */
+
+.hero {
+  width: 100%;
+  padding: 0 31px;
+  border-radius: 7px;
+  background-image: url("../images/Bitmap.png");
+  background-size: cover;
+  background-repeat:no-repeat;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero__descript {
+  width: 49%;
+  margin: 95px 0;
+}
+
+.hero__descript--heading {
+  font-size: 72px;
+  font-weight: 900;
+  color: white;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 19px;
+}
+
+.hero__decript--title {
+  margin-bottom: 45px;
+  color: #dddddde8; 
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: 19px;
+  font-family: 'Barlow', sans-serif;
+  text-align: start;
+}
+
+.hero__descript--btn {
+  padding: 15px 31px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #66D2CF;
+  font-family: "Fraunces" , serif;
+  color: #FEFCF7;
+
+
+}
